@@ -1,0 +1,97 @@
+html {
+	font-family: Helvetica, Arial;
+	font-size: 18px;
+
+}
+body {
+	background-color: #000;
+	color: rgb(255,255,255);
+	/*opacity: .5;*/
+}
+/*颜色的表现(color wheel：color.adobe.com)：
+1.英文名字
+2. hexcode：16进制的表现，0 (min)~ F (max)
+ex. #00（red) 00(green) 00 (blue)  - black
+    #FF FF FF - White
+3.rgb(0~255,0~255,0~255,)
+ex. rgb(0,0,0) - black
+   rgb(255,0,255)
+   透明表现方式：rgba(12,15,230,0~1); a的最后一位是表示透明度
+*/
+
+h1 {
+	font-size: 2rem;
+	font-weight: 800;
+	text-align: center;
+}
+
+h2 {
+	font-size: 1.5rem;
+	font-weight:100;
+}
+
+
+nav ul li {
+	display: inline-block;
+	margin: 20px 50px 20px 50px;
+	     /* up right down left*/
+	color: #1099FF;
+	border:1px solid #1099FF;
+	padding: 10px;
+	border-radius: 5px;
+	transition: background-color 0.5s, color .5s;
+
+	/*background-color: yellow;
+	padding: 5px;
+	border: 1px solid black;*/
+}
+nav ul li:hover{
+	background-color: #1099FF;
+	color: white;
+}
+
+nav ul {
+	text-align: center;
+	list-style-type: none;
+	margin: 0;
+}
+
+nav {
+	background-color: white;
+}
+
+.banner {
+	width: 100%;
+}
+
+.p1 {
+	text-align: center;
+}
+.m1 {display: inline-block;
+	width: 30%;
+	text-align: center;
+	margin: 10px 10px 10px 10px;
+	font-size: 2rem;
+	border:5px solid #FFF821;
+}
+.m1 h2 {padding: 10px;
+	transition: background-color 0.5s, color 0.5s;
+}
+
+.m1 h2:hover{color: #FFF821;
+	background-color: #E8960F;
+	opacity: 0.6;
+
+
+}
+
+/*.m2 {display: inline-block;
+	width: 30%;
+	text-align: center;
+	margin: 10px 10px 10px 10px;
+}
+.m3 {display: inline-block;
+	width: 30%;
+	text-align: center;
+	margin: 10px 10px 10px 10px;
+}*/
