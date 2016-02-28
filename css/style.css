@@ -85,6 +85,7 @@ nav {
 
 }
 
+
 .banner {
 	width: 100%;
 	margin-top: 89px;
@@ -98,14 +99,14 @@ nav {
 	text-align: center;
 	margin: 10px 10px 10px 10px;
 	font-size: 2rem;
-	border:5px solid #FFF821;
+	border:5px groove #FFF821;
 }
 .m1 h2 {padding: 10px;
 	transition: background-color 0.5s, color 0.5s;
 }
 
-.m1 h2:hover{color: #FFF821;
-	background-color: #E8960F;
+.m1 h2:hover{color: black;
+	background-color: white;
 	opacity: 0.6;
 }
 
@@ -125,3 +126,43 @@ nav {
 	width: 200px;
 }
 /*.movie-table>tr>th 有箭头一定要子下级*/
+
+.cinema {
+	margin: 5em 0;
+}
+.circle-img{
+	margin-top: 30px;
+	border-radius: 10%;
+	margin-bottom: 50px;
+}
+
+.about-image{
+	text-align: center;
+}
+.add{
+ 	font-size: 35px;
+}
+
+@media(max-width: 1020px){
+	.m1 {
+		margin:3px 3px 3px 3px;
+	}
+}
+/*@media(max-width: 640px){
+	
+	h1{
+		font-size: 5rem;
+	}	
+}*/
+
+
+@media(max-width:591px){
+	nav ul li a{
+		margin:10px 8px;
+	}
+	h1 {font-size: 1rem;
+	}
+	.m1 {
+		margin:1px 1px 1px 1px;
+}
+/*一定要在最下面*/
