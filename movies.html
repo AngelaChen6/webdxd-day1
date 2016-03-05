@@ -2,15 +2,19 @@
 <html>
 <head>
 	<title>Movie List</title>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:800italic,400italic,600italic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/3.0.3/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+
 </head>
 <body>
 <nav>
 	<ul>
-		<li> <a href="index.html"> Home </a></li>
-		<li><a href="movies.html">Movie List</a></li>
-		<li><a href="about.html">About</a></li>
+		<li> <a href="index.html"><i class="fa fa-home"></i> Home </a></li>
+		<li><a href="movies.html"><i class="fa fa-bars"></i> Movie List</a></li>
+		<li><a href="about.html"><i class="fa fa-users"></i> About</a></li>
+		
 	</ul>
 </nav>
 
@@ -20,6 +24,7 @@
 		<th class="column1">Name</th>
 		<th class="column2">Release Date</th>
 		<th>Director</th>
+		<th>Reserve Ticket</th>
 		</tr>
 		
 	
@@ -27,17 +32,26 @@
 		<td class="column1">Deadpool</td>
 		<td class="column2">Feb 12, 2016</td>
 		<td>Tim Miller</td>
+		<td class="center-icon"><button class="ticket-btn"><i class="fa fa-ticket fa-2x"></i>
+		</button>
+		</td>
 		</tr>
 		<tr>
 		<td class="column1">KongFu Panda 3</td>
 		<td class="column2">Jan 29, 2016</td>
 		<td>Jennifer Yuh Nelson</td>
+		<td class="center-icon"> <button class="ticket-btn"><i class="fa fa-ticket fa-2x"></i>
+		</button></td>
 		</tr>
 		<tr>
 		<td class="column1">Mei Ren Yu</td>
 		<td class="column2">Feb 19, 2016</td>
 		<td>Stephen Chow</td>
+		<td class="center-icon"><button class="ticket-btn"><i class="fa fa-ticket fa-2x"></i></button></td>
+		
 		</tr>
+		<tr>
+		
 	
 </table>
 

@@ -1,5 +1,5 @@
 html {
-	font-family: Helvetica, Arial;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 18px;
 }
 
@@ -172,3 +172,13 @@ nav {
 }*/
 /*一定要在最下面*/
 
+.center-icon {
+	text-align: center;
+}
+
+.ticket-btn {
+	background-color: transparent;
+	border-radius: 5px;
+	padding: 5px;
+
+}
