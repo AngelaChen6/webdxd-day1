@@ -164,6 +164,7 @@ nav {
 	}
 	.m1 {
 		margin:1px 1px 1px 1px;
+	}
 }
 /*@media(max-width:480px){
 	.m1{
@@ -177,8 +178,11 @@ nav {
 }
 
 .ticket-btn {
+	text-align: center;
 	background-color: transparent;
 	border-radius: 5px;
 	padding: 5px;
-
+}
+.alert-btn{
+	background-color: red;
 }
