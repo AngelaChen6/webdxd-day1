@@ -3,7 +3,12 @@
 <head>
 	<title>My first website</title>
 	<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/3.0.3/normalize.css">
+
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:800italic,400italic,600italic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+
 	<!-- <meta name="viewport" 
 content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
 meta 为了在手机里是1：1的比例，放在head里 -->
@@ -17,7 +22,50 @@ meta 为了在手机里是1：1的比例，放在head里 -->
 	</ul>
 </nav>
 
-<img class="banner" src="image\image4.jpg">
+<div class="banner">
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="image/image6.jpg" >
+      <div class="carousel-caption">
+        <h1>Star Wars</h1>
+      </div>
+    </div>
+    <div class="item">
+      <img src="image/image7.jpg" >
+      <div class="carousel-caption">
+        <h1>The Revenant</h1>
+      </div>
+    </div>
+    <div class="item">
+      <img src="image/image4.jpg" >
+      <div class="carousel-caption">
+        <h1>Bat Man</h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
+</div>
 
 
 
@@ -26,14 +74,82 @@ meta 为了在手机里是1：1的比例，放在head里 -->
 	
 	
 <div class="p1">
-		<div class="m1"><img src="image\image1.jpg" width="100%">
-		<h2>Deadpool</h2></div>
+		<div class="m1" data-toggle="modal" data-target="#deadpool">
+		<img src="image\image1.jpg" width="100%">
+		<h2>Deadpool</h2>
+		</div>
+		
+		<!-- Button trigger modal -->
 
-		<div class="m1"><img src="image\image2.jpg" width="100%">
-		<h2>KongFu Panda 3</h2></div>
 
-		<div class="m1"><img src="image\image3.jpg" width="100%">
-		<h2>Mei Ren Yu</h2></div>
+<!-- Modal -->
+<div class="modal fade" id="deadpool" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Deadpool</h4>
+      </div>
+      <div class="modal-body">
+      <img src="image/image1.jpg">
+        <p>Wade Wilson (Ryan Reynolds) is a former Special Forces operative who now works as a mercenary. His world comes crashing down when evil scientist Ajax (Ed Skrein) tortures, disfigures and transforms him into Deadpool. The rogue experiment leaves Deadpool with accelerated healing powers and a twisted sense of humor. With help from mutant allies Colossus and Negasonic Teenage Warhead (Brianna Hildebrand), Deadpool uses his new skills to hunt down the man who nearly destroyed his life.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Buy Ticket</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+		<div class="m1" data-toggle="modal" data-target="#kongfu-panda">
+		<img src="image\image2.jpg" width="100%">
+		<h2>KongFu Panda 3</h2>
+		</div>
+		<!-- Modal -->
+<div class="modal fade" id="kongfu-panda" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Kongfu Panda</h4>
+      </div>
+      <div class="modal-body">
+      <img src="image/image2.jpg">
+        <p>Living large and loving life, Po (Jack Black) realizes that he has a lot to learn if he's going to fulfill the next challenge from his beloved instructor (Dustin Hoffman). After reuniting with his long-lost father (Bryan Cranston), Po must transition from student to teacher and train a group of fun-loving, clumsy pandas to become martial-arts fighters. Together, the kung-fu brethren unite to take on the evil Kai (J.K. Simmons), a supernatural warrior who becomes stronger with each battle.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Buy Ticket</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+		<div class="m1" data-toggle="modal" data-target="#mei-ren-yu">
+		<img src="image\image3.jpg" width="100%">
+		<h2>Mei Ren Yu</h2>
+		</div>
+		<!-- Modal -->
+<div class="modal fade" id="mei-ren-yu" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Mei Ren Yu</h4>
+      </div>
+      <div class="modal-body">
+      <img src="image/image3.jpg">
+        <p>Xuan's real estate project involved reclamation of the sea, threatening the livelihood of the residents who relied on the sea to make a living. Bearing family secrets, Shan was dispatched to stop Xuan. During their encounters, they fall in love with each other. Even though Xuan stopped the reclamation plan out of his love for Shan, Shan got injured in an accident and vanished into the sea</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Buy Ticket</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 		
 </div>
 
@@ -86,6 +202,8 @@ meta 为了在手机里是1：1的比例，放在head里 -->
 	有意义的tag：
 	<nav>:搜索引擎的导航内容，位于页面的顶端；
 	<footer>:位于页面的底部，适用于放地址，页码之类的） -->
-	 
+	 <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
+	 <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
 </body>
 </html>

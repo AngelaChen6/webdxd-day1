@@ -82,13 +82,18 @@ nav {
 	position:fixed;
 	top:0;
 	width: 100%;
+	z-index: 1;
 
 }
 
 
 .banner {
 	width: 100%;
-	margin-top: 89px;
+	
+}
+
+.modal {
+	color: black;
 }
 
 .p1 {
@@ -143,6 +148,29 @@ nav {
  	font-size: 35px;
 }
 
+
+.center-icon {
+	text-align: center;
+}
+
+.ticket-btn {
+	text-align: center;
+	background-color: transparent;
+	border-radius: 5px;
+	padding: 5px;
+}
+.alert-btn{
+	background-color: red;
+}
+
+img {
+	text-align: center;
+	width: 100%;
+}
+
+
+
+
 @media(max-width: 1028px){
 	.m1 {
 		margin:3px 3px 3px 3px;
@@ -173,16 +201,3 @@ nav {
 }*/
 /*一定要在最下面*/
 
-.center-icon {
-	text-align: center;
-}
-
-.ticket-btn {
-	text-align: center;
-	background-color: transparent;
-	border-radius: 5px;
-	padding: 5px;
-}
-.alert-btn{
-	background-color: red;
-}
